@@ -35,8 +35,8 @@ export default function Footer() {
         <Grid container>
           <Grid item xs={12}>
             {socialIcons.map((icon, index) => (
-              <a href={icon.link} style={{ color: "white" }}>
-                <div className={styles.socialIcons} key={index}>
+              <a href={icon.link} key={index} style={{ color: "white" }}>
+                <div className={styles.socialIcons}>
                   {icon.icon}
                   <p className={styles.value}>{icon.value}</p>
                 </div>
