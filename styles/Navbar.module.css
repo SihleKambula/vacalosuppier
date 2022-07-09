@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.171) 0px 5px 8px;
+}
+
+/* .logo{
+
+} */
+
+.navlinks{
+display: flex;
+}
+
+.links{
+    margin-right: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.links a{
+    color: gray;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
