@@ -3,6 +3,7 @@ import About from "../components/About";
 import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
 import Product from "../components/Product";
+import Quote from "../components/Quote";
 
 //styling
 import styles from "../styles/Home.module.css";
@@ -23,6 +24,7 @@ export default function Home() {
         <Landing />
         <Product />
         <About />
+        <Quote />
       </main>
 
       <footer></footer>
