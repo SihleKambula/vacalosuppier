@@ -72,8 +72,8 @@ export default function Product() {
         <h1 style={{ fontSize: "3rem" }}>Our Products</h1>
         <Grid container spacing={3}>
           {products.map((product, index) => (
-            <Grid item md={4}>
-              <Card key={index}>
+            <Grid item md={4} key={index}>
+              <Card>
                 <CardMedia
                   component='img'
                   height='auto'

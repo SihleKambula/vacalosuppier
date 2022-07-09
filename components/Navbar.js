@@ -26,11 +26,11 @@ export default function Navbar() {
         </li>
       </ul>
       <div className={styles.icons}>
-        <a href='https://facebook.com' target='_blank'>
+        <a href='https://facebook.com' target='_blank' rel='noreferrer'>
           <FacebookIcon sx={{ color: "gray", fontSize: 30 }} />
         </a>
 
-        <a href='https://instagram.com' target='_blank'>
+        <a href='https://instagram.com' target='_blank' rel='noreferrer'>
           <InstagramIcon sx={{ color: "gray", fontSize: 30 }} />
         </a>
       </div>
