@@ -1,5 +1,6 @@
 import Head from "next/head";
 import About from "../components/About";
+import Footer from "../components/Footer";
 import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
 import Product from "../components/Product";
@@ -27,7 +28,9 @@ export default function Home() {
         <Quote />
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
