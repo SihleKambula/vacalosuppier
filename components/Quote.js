@@ -5,9 +5,9 @@ import styles from "../styles/Quote.module.css";
 export default function Quote() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id='quote'>
         <Grid container>
-          <Grid item md={6} className={styles.form}>
+          <Grid item xs={6} md={6} className={styles.form}>
             <h1 style={{ fontSize: "3rem", color: "white" }}>Get A Quote</h1>
             <div>
               <TextField

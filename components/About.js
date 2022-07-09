@@ -8,7 +8,7 @@ export default function About() {
       <h1 style={{ fontSize: "3rem" }}>About us</h1>
 
       <Grid container spacing={4}>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           <p>
             Vacalo Suppliers is a South African printing company that supplies
             barcode scanners, mobile computers, labels and POS printers, line
@@ -26,7 +26,7 @@ export default function About() {
           an affordable price.We distribute a leading range of office equipment
           including Line, Laser, Thermal and dot Matrix printers.
         </Grid>
-        <Grid item md={6}>
+        <Grid item xs={12} md={6}>
           <div style={{ width: "100%" }}>
             <Image
               style={{ borderRadius: "15px" }}

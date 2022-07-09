@@ -7,15 +7,6 @@ export default function Landing() {
   return (
     <div className={styles.container}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={7}>
-          <Image
-            style={{ borderRadius: "10px" }}
-            src='/images/about_us2.jpg'
-            width={700}
-            height={500}
-          />
-        </Grid>
-
         <Grid item xs={12} md={5}>
           <h1 style={{ fontSize: "2.5rem" }}>
             Meeting your printing needs is our tradition
@@ -25,12 +16,12 @@ export default function Landing() {
             and exceed your present and future expectations, while saving you
             time and money.
           </p>
-          <Link href='/'>
+          <Link href='#quote'>
             <button
               style={{
                 padding: "10px 10px",
                 border: "none",
-                backgroundColor: "blue",
+                backgroundColor: "#0F243F",
                 color: "white",
                 borderRadius: "5px",
                 fontSize: "1.2rem",
@@ -40,6 +31,14 @@ export default function Landing() {
               Get A Quote
             </button>
           </Link>
+        </Grid>
+        <Grid item xs={12} md={7}>
+          <Image
+            style={{ borderRadius: "10px" }}
+            src='/images/about_us2.jpg'
+            width={700}
+            height={500}
+          />
         </Grid>
       </Grid>
     </div>
