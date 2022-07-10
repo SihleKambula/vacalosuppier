@@ -1,14 +1,26 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Typography, Container, Grid } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import Image from "next/image";
 import styles from "../styles/Quote.module.css";
 export default function Quote() {
   return (
     <>
-      <div className={styles.container} id='quote'>
+      <Container maxWidth='lg' sx={{ mt: 10 }} id='quote'>
         <Grid container>
-          <Grid item xs={6} md={6} className={styles.form}>
-            <h1 style={{ fontSize: "3rem", color: "white" }}>Get A Quote</h1>
+          <Grid item xs={12} md={6} className={styles.form}>
+            <Typography
+              variant='h1'
+              sx={{
+                fontSize: { xs: "2.8rem", md: "4rem" },
+                fontFamily: "Quicksand",
+                fontWeight: "700",
+                color: "white",
+                my: 4,
+              }}
+            >
+              Get A Quote
+            </Typography>
+
             <div>
               <TextField
                 id='outlined-required'
@@ -45,7 +57,7 @@ export default function Quote() {
             <Image src='/images/quote.jpg' width={600} height={500} />
           </Grid>
         </Grid>
-      </div>
+      </Container>
     </>
   );
 }

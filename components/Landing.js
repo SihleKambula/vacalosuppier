@@ -2,12 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 import styles from "../styles/Landing.module.css";
+import { Box } from "@mui/material";
 export default function Landing() {
   return (
-    <div className={styles.container}>
+    <Container maxWidth='lg' sx={{ my: 4 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={5}>
+          <Box>
+            <Image src='/Logo.jpg' width={200} height={120} />
+          </Box>
           <h1 style={{ fontSize: "2.5rem" }}>
             Meeting your printing needs is our tradition
           </h1>
@@ -41,6 +46,6 @@ export default function Landing() {
           />
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }

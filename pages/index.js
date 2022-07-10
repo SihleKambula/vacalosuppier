@@ -5,6 +5,7 @@ import Landing from "../components/Landing";
 import Navbar from "../components/Navbar";
 import Product from "../components/Product";
 import Quote from "../components/Quote";
+import ResponsiveNavbar from "../components/ResponsiveNavbar";
 
 //styling
 import styles from "../styles/Home.module.css";
@@ -18,7 +19,8 @@ export default function Home() {
       </Head>
 
       <header>
-        <Navbar />
+        {/* <Navbar /> */}
+        <ResponsiveNavbar />
       </header>
 
       <main className={styles.main}>

@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
@@ -9,12 +9,12 @@ export default function Footer() {
   const socialIcons = [
     {
       icon: <WhatsAppIcon />,
-      value: "012 456 7891",
-      link: "https://wa.me/0740872680",
+      value: "067 685 7743",
+      link: "https://wa.me/+27676857743",
     },
     {
       icon: <EmailIcon />,
-      value: "email.com",
+      value: "valenciam@vacalosuppliers.co.za",
       link: "mailto:valenciam@vacalosuppliers.co.za",
     },
     {
@@ -29,9 +29,21 @@ export default function Footer() {
     },
   ];
   return (
-    <div className={styles.container}>
-      <div className={styles.innerContainer}>
-        <h1 style={{ fontSize: "3rem" }}>Contact details</h1>
+    <Container
+      maxWidth='xl'
+      sx={{ backgroundColor: "#0F243F", color: "#ffffff", mt: 4 }}
+    >
+      <Container maxWidth='md'>
+        <Typography
+          variant='h1'
+          sx={{
+            fontSize: { xs: "2.8rem", md: "4rem" },
+            fontFamily: "Quicksand",
+            fontWeight: "700",
+          }}
+        >
+          Contact details
+        </Typography>
         <Grid container>
           <Grid item xs={12}>
             {socialIcons.map((icon, index) => (
@@ -47,7 +59,7 @@ export default function Footer() {
         <p style={{ textAlign: "center", paddingBottom: "10px" }}>
           &copy; Vacalosuppier
         </p>
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 }

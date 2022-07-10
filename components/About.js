@@ -1,12 +1,21 @@
-import { Grid } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/About.module.css";
 export default function About() {
   return (
-    <div className={styles.container}>
-      <h1 style={{ fontSize: "3rem" }}>About us</h1>
-
+    <Container maxWidth='lg' sx={{ my: 10 }}>
+      <Typography
+        variant='h1'
+        sx={{
+          fontSize: { xs: "2.8rem", md: "4rem" },
+          fontFamily: "Quicksand",
+          fontWeight: "700",
+          my: 4,
+        }}
+      >
+        About us
+      </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <p>
@@ -38,6 +47,6 @@ export default function About() {
           </div>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 }
