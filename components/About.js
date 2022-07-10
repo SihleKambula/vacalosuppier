@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../styles/About.module.css";
 export default function About() {
   return (
-    <Container maxWidth='lg' sx={{ my: 10 }}>
+    <Container maxWidth='lg' sx={{ my: 10 }} id='about'>
       <Typography
         variant='h1'
         sx={{

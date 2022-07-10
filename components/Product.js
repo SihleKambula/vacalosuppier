@@ -84,7 +84,7 @@ export default function Product() {
     setSame(index);
   };
   return (
-    <Container maxWidth='lg' sx={{ my: 10 }}>
+    <Container maxWidth='lg' sx={{ my: 10 }} id='products'>
       <Grid container spacing={4}>
         {images.map((image, index) => (
           <Grid item xs={6} md={3} key={index}>

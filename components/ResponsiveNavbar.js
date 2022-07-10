@@ -12,6 +12,7 @@ import Box from "@mui/material/Box";
 import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 
 export default function ResponsiveNavbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -27,7 +28,12 @@ export default function ResponsiveNavbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const pages = ["About", "Products", "Quote", "Contact"];
+  const pages = [
+    { page: "About", link: "#about" },
+    { page: "Products", link: "#products" },
+    { page: "Quote", link: "#quote" },
+    { page: "Contact", link: "#contact" },
+  ];
   return (
     <AppBar position='static' sx={{ backgroundColor: "white" }}>
       <Container maxWidth='xl'>
@@ -64,9 +70,13 @@ export default function ResponsiveNavbar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>{page}</Typography>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign='center'>
+                    <a href={page.link} style={{ color: "gray" }}>
+                      {page.page}
+                    </a>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -89,7 +99,9 @@ export default function ResponsiveNavbar() {
                   fontSize: "1.1rem",
                 }}
               >
-                {page}
+                <a href={page.link} style={{ color: "gray" }}>
+                  {page.page}
+                </a>
               </Button>
             ))}
           </Box>

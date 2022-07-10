@@ -32,6 +32,7 @@ export default function Footer() {
     <Container
       maxWidth='xl'
       sx={{ backgroundColor: "#0F243F", color: "#ffffff", mt: 4 }}
+      id='contact'
     >
       <Container maxWidth='md'>
         <Typography

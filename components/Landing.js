@@ -7,7 +7,7 @@ import styles from "../styles/Landing.module.css";
 import { Box } from "@mui/material";
 export default function Landing() {
   return (
-    <Container maxWidth='lg' sx={{ my: 4 }}>
+    <Container maxWidth='lg' sx={{ my: 4 }} id='/'>
       <Grid container spacing={2}>
         <Grid item xs={12} md={5}>
           <Box>
