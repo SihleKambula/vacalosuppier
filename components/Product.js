@@ -30,6 +30,7 @@ export default function Product() {
         "MOBILE DEVICE MANAGEMENT",
         "VR DEVICE MANAGEMENT",
         "THINGS MANAGEMENT",
+        "etc",
       ],
     },
     {
@@ -41,6 +42,7 @@ export default function Product() {
         "Honeywell CK65 Handheld Computer",
         "Honeywell EDA5 Handheld Computer",
         "Honeywell Dolphin CT60 Handheld Computer",
+        "etc",
       ],
     },
     {
@@ -48,7 +50,7 @@ export default function Product() {
       image: "/images/honeywell POS.webp",
       description:
         "Star manufactures a diverse range of receipt printers giving Star customers more choicethan ever before together with features that precisely meet individual needs.",
-      products: ["Mc-Print3", "SP700", "TSP100"],
+      products: ["Mc-Print3", "SP700", "TSP100", "etc"],
     },
     {
       name: "Urovo",
@@ -59,6 +61,7 @@ export default function Product() {
         "Urovo P8100 Tablet Series",
         "Urovo U2 Wearable Computer",
         "Urovo R7 Series Wireless Ring scanner",
+        "etc",
       ],
     },
     {
@@ -66,14 +69,25 @@ export default function Product() {
       image: "/images/printronix copy.webp",
       description:
         "Rely on us to transform your enterprise with the industry’s most reliable thermal barcode printers.",
-      products: ["T8000 Printer", "T6000e Printer", "T4000 Printer"],
+      products: ["T8000 Printer", "T6000e Printer", "T4000 Printer", "etc"],
     },
     {
       name: "Stationary",
       image: "/images/stationary.jpg",
-      description:
-        "Please provide me with some copy right for your stationary section",
-      products: ["Mc-Print3", "SP700", "TSP100"],
+      description: "We provide all  your stationary needs",
+      products: ["Books", "Pens", "Printing Paper", "etc"],
+    },
+    {
+      name: "Consumables",
+      image: "/images/labels.jpg",
+      description: "We also provide consumables",
+      products: [
+        "Barcode labels",
+        "Thermal labels",
+        "Ribbons",
+        "Till rows",
+        "etc",
+      ],
     },
   ];
 
