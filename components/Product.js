@@ -1,4 +1,4 @@
-import { Button, Container, Grid } from "@mui/material";
+import { Button, Chip, Container, Grid } from "@mui/material";
 import React, { useState } from "react";
 import Image from "next/image";
 import Card from "@mui/material/Card";
@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import styles from "../styles/Product.module.css";
+import { Box } from "@mui/system";
 export default function Product() {
   const images = [
     "/images/42 gears.png",
@@ -161,7 +162,9 @@ export default function Product() {
                 >
                   <CardContent>
                     {product.products.map((prod, index) => (
-                      <li key={index}>{prod}</li>
+                      <Box sx={{ my: 2 }} key={index}>
+                        <Chip label={prod} />
+                      </Box>
                     ))}
                   </CardContent>
                 </Collapse>
