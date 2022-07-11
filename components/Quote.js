@@ -21,37 +21,42 @@ export default function Quote() {
               Get A Quote
             </Typography>
 
-            <div>
-              <TextField
-                id='outlined-required'
-                label='Full Name'
-                variant='filled'
-                sx={{ backgroundColor: "white", borderRadius: "10px" }}
-                fullWidth
-              />
-            </div>
-            <br />
-            <div>
-              <TextField
-                id='outlined-required'
-                label='Email'
-                variant='filled'
-                sx={{ backgroundColor: "white", borderRadius: "10px" }}
-                fullWidth
-              />
-            </div>
-            <br />
-            <div>
-              <TextField
-                id='outlined-required'
-                label='Comment'
-                variant='filled'
-                sx={{ backgroundColor: "white", borderRadius: "10px" }}
-                fullWidth
-              />
-            </div>
-            <br />
-            <Button>Submit</Button>
+            <form name='contact' method='POST' data-netlify='true'>
+              <div>
+                <TextField
+                  id='outlined-required'
+                  label='Full Name'
+                  name='Full Name'
+                  variant='filled'
+                  sx={{ backgroundColor: "white", borderRadius: "10px" }}
+                  fullWidth
+                />
+              </div>
+              <br />
+              <div>
+                <TextField
+                  id='outlined-required'
+                  label='Email'
+                  name='email'
+                  variant='filled'
+                  sx={{ backgroundColor: "white", borderRadius: "10px" }}
+                  fullWidth
+                />
+              </div>
+              <br />
+              <div>
+                <TextField
+                  id='outlined-required'
+                  label='Comment'
+                  variant='filled'
+                  name='comment'
+                  sx={{ backgroundColor: "white", borderRadius: "10px" }}
+                  fullWidth
+                />
+              </div>
+              <br />
+              <Button type='submit'>Submit</Button>
+            </form>
           </Grid>
           <Grid item md={6}>
             <Image src='/images/quote.jpg' width={600} height={500} />
