@@ -27,6 +27,7 @@ export default function Quote() {
               method='POST'
               data-netlify='true'
             >
+              <input type='hidden' name='form-name' value='contact' />
               <div>
                 <TextField
                   id='outlined-required'
