@@ -21,7 +21,12 @@ export default function Quote() {
               Get A Quote
             </Typography>
 
-            <form name='contact' method='POST' data-netlify='true'>
+            <form
+              name='contact'
+              action='/success'
+              method='POST'
+              data-netlify='true'
+            >
               <div>
                 <TextField
                   id='outlined-required'
