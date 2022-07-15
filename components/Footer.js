@@ -1,9 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
-import Image from "next/image";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import styles from "../styles/Footer.module.css";
 export default function Footer() {
   const socialIcons = [
@@ -19,13 +17,8 @@ export default function Footer() {
     },
     {
       icon: <FacebookIcon />,
-      value: "vacalosuppier",
-      link: "https:facebook.com",
-    },
-    {
-      icon: <InstagramIcon />,
-      value: "@vacalosuppier",
-      link: "https:instagram.com",
+      value: "vacalosupplier",
+      link: "https://www.facebook.com/Vacalo-Suppliers-108134568635678",
     },
   ];
   return (

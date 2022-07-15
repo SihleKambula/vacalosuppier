@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
 
@@ -26,12 +26,16 @@ export default function Navbar() {
         </li>
       </ul>
       <div className={styles.icons}>
-        <a href='https://facebook.com' target='_blank' rel='noreferrer'>
+        <a
+          href='https://www.facebook.com/Vacalo-Suppliers-108134568635678'
+          target='_blank'
+          rel='noreferrer'
+        >
           <FacebookIcon sx={{ color: "gray", fontSize: 30 }} />
         </a>
 
-        <a href='https://instagram.com' target='_blank' rel='noreferrer'>
-          <InstagramIcon sx={{ color: "gray", fontSize: 30 }} />
+        <a href='https://wa.me/+27676857743' target='_blank' rel='noreferrer'>
+          <WhatsAppIcon sx={{ color: "gray", fontSize: 30 }} />
         </a>
       </div>
     </nav>
