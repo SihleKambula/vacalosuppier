@@ -17,9 +17,9 @@ export default function Landing() {
             Meeting your printing needs is our tradition
           </h1>
           <p style={{ fontSize: "1.2rem" }}>
-            We listen to your unique printing needs to make sure that we meet
-            and exceed your present and future expectations, while saving you
-            time and money.
+            Vacalosuppliers listen to your unique printing needs to make sure
+            that we meet and exceed your present and future expectations, while
+            saving you time and money.
           </p>
           <Link href='#quote'>
             <button

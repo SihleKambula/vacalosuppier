@@ -11,8 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import Link from "next/link";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function ResponsiveNavbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -106,12 +105,20 @@ export default function ResponsiveNavbar() {
             ))}
           </Box>
           <Box>
-            <a href='https://facebook.com' target='_blank' rel='noreferrer'>
+            <a
+              href='https://www.facebook.com/Vacalo-Suppliers-108134568635678'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FacebookIcon sx={{ color: "gray", fontSize: 30 }} />
             </a>
 
-            <a href='https://instagram.com' target='_blank' rel='noreferrer'>
-              <InstagramIcon sx={{ color: "gray", fontSize: 30 }} />
+            <a
+              href='https://wa.me/+27676857743'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <WhatsAppIcon sx={{ color: "gray", fontSize: 30 }} />
             </a>
           </Box>
 

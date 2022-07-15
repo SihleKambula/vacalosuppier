@@ -1,7 +1,6 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/About.module.css";
 export default function About() {
   return (
     <Container maxWidth='lg' sx={{ my: 10 }} id='about'>
@@ -19,14 +18,14 @@ export default function About() {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <p>
-            Vacalo Suppliers is a South African printing company that supplies
+            Vacalosuppliers is a South African printing company that supplies
             barcode scanners, mobile computers, labels and POS printers, line
             and serial impact printers, as well as consumables. Vacalo Suppliers
             is in partnership with well known vendors for RFID, POS and Auto-ID
             hardware and software solutions.
           </p>
           <p>
-            Vacalo Suppliers ensures that its customers are supplied with the
+            Vacalosuppliers ensures that its customers are supplied with the
             best printing products that are suitable to their needs and putting
             in mind sustainable continued grow and development of every
             customer.

@@ -16,6 +16,7 @@ export default function Home() {
         <title>Vacalosuppliers</title>
         <meta name='description' content='Made by CreatrSi' />
         <link rel='icon' href='/Logo.jpg' />
+        <meta name='keywords' content='supplier, printers, POS' />
       </Head>
 
       <header>
